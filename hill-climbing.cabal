@@ -1,41 +1,42 @@
-cabal-version:       2.0
-name:                hill-climbing
-version:             0.0.0
-synopsis:            Hill climbing algorithm using Comonads
-description:         Hill climbing algorithm using Comonads
-homepage:            https://github.com/ChrisPenner/hill-climbing
-bug-reports:         https://github.com/ChrisPenner/hill-climbing/issues
-license:             BSD3
-license-file:        LICENSE
-author:              Chris Penner
-maintainer:          christopher.penner@gmail.com
-copyright:           2018 Chris Penner
-category:            Math
-build-type:          Simple
-extra-doc-files:     README.md
-                   , CHANGELOG.md
-tested-with:         GHC == 8.4.4
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.31.0.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: aecde06d2545051aff882f1ef5c866ca535bcf05d0b3ec98967b164eeded3f34
+
+name:           hill-climbing
+version:        0.0.0
+synopsis:       Hill climbing algorithm using Comonads
+description:    Hill climbing algorithm using Comonads
+category:       Math
+homepage:       https://github.com/ChrisPenner/hill-climbing.git#readme
+bug-reports:    https://github.com/ChrisPenner/hill-climbing.git/issues
+author:         Chris Penner
+maintainer:     christopher.penner@gmail.com
+copyright:      2018 Chris Penner
+license:        BSD3
+license-file:   LICENSE
+tested-with:    GHC==8.4.4
+build-type:     Simple
 
 source-repository head
-  type:                git
-  location:            https://github.com/ChrisPenner/hill-climbing.git
+  type: git
+  location: https://github.com/ChrisPenner/hill-climbing.git
 
 library
-  hs-source-dirs:      src
-  exposed-modules:     HillClimbing
-                       Prelude
-
-  build-depends:       base-noprelude ^>= 4.11.1.0
-                     , relude
-
-  ghc-options:         -Wall
-                       -Wincomplete-uni-patterns
-                       -Wincomplete-record-updates
-                       -Wcompat
-                       -Widentities
-                       -Wredundant-constraints
-                       -fhide-source-paths
-                       -Wmissing-export-lists
-                       -Wpartial-fields
-
-  default-language:    Haskell2010
+  exposed-modules:
+      HillClimbing
+  other-modules:
+      Paths_hill_climbing
+  hs-source-dirs:
+      src
+  ghc-options: -Wall -Wincomplete-uni-patterns -Wincomplete-record-updates -Wcompat -Widentities -Wredundant-constraints -fhide-source-paths -Wmissing-export-lists -Wpartial-fields
+  build-depends:
+      adjunctions
+    , base >=4.11.1.0
+    , comonad
+    , distributive
+    , relude
+  default-language: Haskell2010

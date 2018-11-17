@@ -1,0 +1,30 @@
+name: hill-climbing
+version: '0.0.0'
+synopsis: Hill climbing algorithm using Comonads
+description: Hill climbing algorithm using Comonads
+category: Math
+author: Chris Penner
+maintainer: christopher.penner@gmail.com
+copyright: 2018 Chris Penner
+license: BSD3
+github: ChrisPenner/hill-climbing.git
+tested-with: GHC==8.4.4
+ghc-options:
+- -Wall
+- -Wincomplete-uni-patterns
+- -Wincomplete-record-updates
+- -Wcompat
+- -Widentities
+- -Wredundant-constraints
+- -fhide-source-paths
+- -Wmissing-export-lists
+- -Wpartial-fields
+dependencies:
+- base >=4.11.1.0
+- comonad
+- adjunctions
+- distributive
+library:
+  source-dirs: src
+  exposed-modules:
+  - HillClimbing
