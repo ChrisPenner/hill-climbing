@@ -4,7 +4,7 @@ cabal-version: 1.12
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: aecde06d2545051aff882f1ef5c866ca535bcf05d0b3ec98967b164eeded3f34
+-- hash: accad028aac1760c0375029da84f847145222c494bea3ec5d9eea62d6b1b045e
 
 name:           hill-climbing
 version:        0.0.0
@@ -38,5 +38,4 @@ library
     , base >=4.11.1.0
     , comonad
     , distributive
-    , relude
   default-language: Haskell2010
